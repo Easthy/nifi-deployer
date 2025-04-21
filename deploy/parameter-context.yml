@@ -1,0 +1,19 @@
+-
+  name: deploy_flow_parameter_context
+  assign_to_process_group: deploy_flow
+  parameters:
+    generate_flow_file_batch_size:
+      value: 20
+      sensitive: False
+      description: Value description for generate_flow_file_batch_size
+    merge_content_minimum_numbers:
+      value: 2
+      sensitive: True
+      description: Value description for merge_content_minimum_numbers
+-
+  name: test_context
+  parameters:
+    test_param_name:
+      value: 20
+      sensitive: True
+      description: Test desccription

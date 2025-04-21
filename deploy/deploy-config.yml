@@ -1,0 +1,16 @@
+keys_folder: ../keys/nipyapi
+develop:
+  nifi_api_url: https://localhost:8443/nifi-api
+  registry_api_url: https://localhost:18443/nifi-registry-api
+  server_cert: localhost-ts.pem
+  client_cert: client-cert.pem
+  client_key: client-key.pem
+  client_key_password: nipyapi
+production:
+  nifi_api_url: https://localhost:8443/nifi-api
+  registry_api_url: https://localhost:18443/nifi-registry-api
+  server_cert: localhost-ts.pem
+  client_cert: client-cert.pem
+  client_key: client-key.pem
+  client_key_password: nipyapi
+  registry_name: 'NiFi Registry'
