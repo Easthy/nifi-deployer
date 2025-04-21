@@ -16,13 +16,14 @@ docker volume rm nifi-certs
 `docker-compose -f docker-compose.yml up`
 
 #### Copy certificates from docker
-`sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/CN=admin_OU=NIFI.p12 ./CN=admin_OU=NIFI.p12`
-`sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/CN=admin_OU=NIFI.password ./CN=admin_OU=NIFI.password`
-`sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/localhost/keystore.jks ./keystore.jks`
-`sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/localhost/truststore.jks ./truststore.jks`
-`sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/nifi-cert.pem ./nifi-cert.pem`
-`sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/nifi-key.key ./nifi-key.key`
-
+```
+sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/CN=admin_OU=NIFI.p12 ./CN=admin_OU=NIFI.p12
+sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/CN=admin_OU=NIFI.password ./CN=admin_OU=NIFI.password
+sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/localhost/keystore.jks ./keystore.jks
+sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/localhost/truststore.jks ./truststore.jks
+sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/nifi-cert.pem ./nifi-cert.pem
+sudo cp /var/lib/docker/volumes/nifi-certs/_data/auth-certs-san/nifi-key.key ./nifi-key.key
+```
 
 #### Check your jks password
 ```
